@@ -11,7 +11,7 @@ Follow all the steps AND sub-steps.
   * Install using `conda create -n sharing-code -c conda-forge jupyterlab jupytext cookiecutter`
   * > If you want to see what this command would do without actually doing anything, add the `-d` option for dry-run.
 * MATLAB installed on your computer. (A version from the last few years preferably)
-  * Revert to the default MATLAB path (make sure you know how to recreate or somehow save your old path settings!!!)
+  * Revert to the default MATLAB path (make sure you save your current path settings using `savepath folderName/pathdef.m` so that you can recover it later!!!)
 * Git installed on your computer.
 * An account on github.com.
 
@@ -23,6 +23,7 @@ Follow all the steps AND sub-steps.
 * Run (at least partially) the examples.
 * Download a project template using cookiecutter
 * Make your own person utilities package and publish it to github
+* Install your package into a new environment
 
 ## Instructions
 
@@ -35,3 +36,10 @@ Imagine you are trying to understand and replicate someone's analysis of some oc
 
 * **Attempt Example 2 - The better example**
   * More instructions are contained in the [README](better_example/README.md) in the folder.
+
+* **Attempt Example 3 - The good example**
+  * More instructions are contained in the [README](good_example/README.md) in the folder.
+
+* **Start your own project from a cookiecutter**
+
+Sorry MATLAB users, I didn't make a cookiecutter for you... instead, try copying (cloning the example package).
