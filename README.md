@@ -8,7 +8,7 @@ Follow all the steps AND sub-steps.
 
 * `conda` installed via miniconda or anaconda
 * Jupyter Lab installed into fresh conda environment
-  * Install using `conda create -n reusable-code -c conda-forge jupyterlab jupytext cookiecutter`
+  * Install using `conda create -n sharing-code -c conda-forge jupyterlab jupytext cookiecutter`
   * > If you want to see what this command would do without actually doing anything, add the `-d` option for dry-run.
 * MATLAB installed on your computer. (A version from the last few years preferably)
   * Revert to the default MATLAB path (make sure you know how to recreate or somehow save your old path settings!!!)
