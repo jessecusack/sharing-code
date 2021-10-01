@@ -1,6 +1,6 @@
 function [] = generate_data_for_bad_example()
 % load an individual profile
-load('~/Dropbox/Data/SPAMEX/vmp/SP_VMP_3500m.mat', 'SP2_P5_01')
+load('SP2_P5_01_VMP_SPAMEX_2014.mat', 'SP2_P5_01')
 vmp = SP2_P5_01;
 
 % use uninformative variable names
