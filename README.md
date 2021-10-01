@@ -27,19 +27,15 @@ Follow all the steps AND sub-steps.
 
 ## Instructions
 
-Imagine you are trying to understand and replicate someone's analysis of some oceanographic data. They send you their code and the data. Each example is self-contained and you should attempt to run
+Imagine you are trying to understand and replicate someone's analysis of some oceanographic data. They send you their code and the data. Each example is self-contained and you should attempt follow the instructions within.
 
-* **Clone this repository**
+1) **Clone this repository**
+1) **Attempt Example 1 - The bad example**
+  1) More instructions are contained in the [README](bad_example/README.md) in the folder.
+1) **Attempt Example 2 - The better example**
+  1) More instructions are contained in the [README](better_example/README.md) in the folder.
+1) **Attempt Example 3 - The good example**
+1) More instructions are contained in the [README](good_example/README.md) in the folder.
+1) **Start your own project from a cookiecutter**
 
-* **Attempt Example 1 - The bad example**
-  * More instructions are contained in the [README](bad_example/README.md) in the folder.
-
-* **Attempt Example 2 - The better example**
-  * More instructions are contained in the [README](better_example/README.md) in the folder.
-
-* **Attempt Example 3 - The good example**
-  * More instructions are contained in the [README](good_example/README.md) in the folder.
-
-* **Start your own project from a cookiecutter**
-
-Sorry MATLAB users, I didn't make a cookiecutter for you... instead, try copying (cloning the example package).
+Sorry MATLAB users, I didn't make a cookiecutter for you. Instead, try using the [example package](https://github.com/jessecusack/example_matlab_toolbox) as a template.
