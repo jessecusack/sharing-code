@@ -31,11 +31,11 @@ Imagine you are trying to understand and replicate someone's analysis of some oc
 
 1) **Clone this repository**
 1) **Attempt Example 1 - The bad example**
-  1) More instructions are contained in the [README](bad_example/README.md) in the folder.
+    1) More instructions are contained in the [README](bad_example/README.md) in the folder.
 1) **Attempt Example 2 - The better example**
-  1) More instructions are contained in the [README](better_example/README.md) in the folder.
+    1) More instructions are contained in the [README](better_example/README.md) in the folder.
 1) **Attempt Example 3 - The good example**
-1) More instructions are contained in the [README](good_example/README.md) in the folder.
+    1) More instructions are contained in the [README](good_example/README.md) in the folder.
 1) **Start your own project from a cookiecutter**
 
 Sorry MATLAB users, I didn't make a cookiecutter for you. Instead, try using the [example package](https://github.com/jessecusack/example_matlab_toolbox) as a template.
