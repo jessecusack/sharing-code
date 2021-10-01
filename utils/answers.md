@@ -1,14 +1,16 @@
 ### Bad example
 
-List of problems:
+List of issues:
 
 * uninformative file names
-* use of file name for versioning is bad practice
+* use of file name for versioning
 * no comments or instructions
 * uninformative variable names
 * (matlab) we dont know what variables are loaded
 * hard coded path to the wrong place on someone elses computer
 * uses a function that you don't have (which is also not informatively named)
+* needs the m_map toolbox which we might not have
+* needs cartopy/scipy etc. packages which we might not have installed
 
 ### Better example
 
@@ -18,20 +20,27 @@ List of improvements:
 * more informative data file name
 * more informative variable names
 * includes comments
-* relative file path that actually works
+* relative file path that works
 * includes functions that you need as separate files
 
-List of (now more subtle) problems:
+List of (now more subtle) issues:
 
-* assumes you have access to some non-standard packages like m_map and cartopy
-* doesn't specify an environment
+* still assumes you have access to some non-standard packages like m_map and cartopy
+* doesn't specify an environment (or versions) for python
 * data file provided manually
-* overwrote a built in matlab function
-* you now have the functions and modules, however, they don't have docstrings
+* name conflicts with two (!) built in matlab functions
+* provided functions and modules have no docstrings
 
 ### Good example
+
+List of improvements:
 
 * specifies a conda environment
 * contains instructions and requirements
 * version control with git, accessible via github
 * automatic download of data and toolboxes
+* Generate notebooks from python files using jupytext
+
+List of (new very subtle) issues:
+
+* Requires MATLAB version > 2013a for savefig function. 
