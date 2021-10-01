@@ -39,3 +39,10 @@ When code follows basic good practice, it is then a lot easier to make good use 
 * Continuous integration e.g. `travis`.
 
 The further down this list we go, the more we get into the realms of professional software development. Most scientists don't have the time or motivation to learn all these tools, but I think they *should* be aware they exist and what they aim to achieve. 
+
+## Open Access
+
+It is possible to create a DOI for code and data.
+
+* Zenodo - archiving data and code
+* `pypi` - uploading your package for everyone (also conda-forge)
