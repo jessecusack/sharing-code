@@ -3,7 +3,7 @@ import requests
 import os
 from helpers import strip_comments, add_new_line_sep, remove_function_docstrings
 
-save_dir = "../better_example/"
+save_dir = os.path.join("..", "better_example")
 
 # +
 url = "https://raw.githubusercontent.com/jessecusack/example_matlab_toolbox/main/jc_calculate_diffusivity.m"
