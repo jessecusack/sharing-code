@@ -53,7 +53,7 @@ xlim([-0.2e-5 1e-5])
 ns(ns < 1e-7) = NaN;
 
 
-Krho = diff(e, ns, 0.2);
+Krho = rdiff(e, ns, 0.2);
 
 fig6 = figure(106);
 semilogx(Krho, d)

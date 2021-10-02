@@ -1,4 +1,4 @@
-function [Krho] = diff(eps, N2, gamma)
+function [Krho] = rdiff(eps, N2, gamma)
 
 if ~exist('gamma', 'var')
     gamma = 0.2;

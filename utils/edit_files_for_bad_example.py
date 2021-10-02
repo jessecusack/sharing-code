@@ -24,6 +24,3 @@ new_text = strip_comments(text.splitlines())
 
 with open(os.path.join(save_dir, "analyse_data_v2.m"), "w") as f:
     f.writelines(add_new_line_sep(new_text))
-# -
-
-

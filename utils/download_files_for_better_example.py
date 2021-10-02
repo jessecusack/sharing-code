@@ -8,10 +8,10 @@ save_dir = os.path.join("..", "better_example")
 # +
 url = "https://raw.githubusercontent.com/jessecusack/example_matlab_toolbox/main/jc_calculate_diffusivity.m"
 
-text = requests.get(url).text.replace("jc_calculate_diffusivity", "diff")
+text = requests.get(url).text.replace("jc_calculate_diffusivity", "rdiff")
 new_text = strip_comments(text.splitlines())
 
-with open(os.path.join(save_dir, "diff.m"), "w") as f:
+with open(os.path.join(save_dir, "rdiff.m"), "w") as f:
     f.writelines(add_new_line_sep(new_text))
 
 # +
@@ -38,7 +38,7 @@ url = "https://raw.githubusercontent.com/jessecusack/example_research_project/ma
 text = requests.get(url).text
 
 # Mangle names
-new_text = text.replace("jc_calculate_diffusivity", "diff").replace("jc_convolve_hanning", "smooth").replace("jc_despike_threshold", "despike")
+new_text = text.replace("jc_calculate_diffusivity", "rdiff").replace("jc_convolve_hanning", "smooth").replace("jc_despike_threshold", "despike")
 # Use correct file location... 
 new_text = new_text.replace("../data/external/vmp_profile_SPAMEX_2014.mat", "vmp_profile_SPAMEX_2014.mat")
 # Change figure output dir
@@ -55,7 +55,7 @@ with open(os.path.join(save_dir, "analyse_vmp_profile.m"), "w") as f:
 url = "https://raw.githubusercontent.com/jessecusack/example_research_project/main/analysis/analyse_vmp_profile.py"
 
 # Mangle names
-text = requests.get(url).text.replace("calculate_diffusivity", "diff").replace("convolve_hanning", "smooth").replace("despike_threshold", "despike")
+text = requests.get(url).text.replace("calculate_diffusivity", "rdiff").replace("convolve_hanning", "smooth").replace("despike_threshold", "despike")
 # Use correct file location... 
 new_text = text.replace("../data/external/vmp_profile_SPAMEX_2014.mat", "vmp_profile_SPAMEX_2014.mat")
 # Change figure output dir
@@ -79,7 +79,7 @@ os.remove(tmp_file)
 # +
 url = "https://raw.githubusercontent.com/jessecusack/example_python_package/main/example_python_package/utils.py"
 
-text = requests.get(url).text.replace("calculate_diffusivity", "diff").replace("convolve_hanning", "smooth").replace("despike_threshold", "despike").replace("_np", "np")
+text = requests.get(url).text.replace("calculate_diffusivity", "rdiff").replace("convolve_hanning", "smooth").replace("despike_threshold", "despike").replace("_np", "np")
 
 text = remove_function_docstrings(text)
 

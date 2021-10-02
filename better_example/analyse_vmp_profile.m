@@ -62,7 +62,7 @@ N2_smooth(N2_smooth < 1e-7) = NaN;
 
 %% Calculate the turbulent diffusivity.
 
-Krho = diff(vmp_profile.dissipation, N2_smooth, 0.2);
+Krho = rdiff(vmp_profile.dissipation, N2_smooth, 0.2);
 
 fig6 = figure(106);
 semilogx(Krho, vmp_profile.depth)
