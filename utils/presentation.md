@@ -9,6 +9,8 @@
 
 A prerequisite to sharing any code is to follow **good practice** when writing it.
 
+We _all_ write bad code form time to time! Usually because we're under pressure or in a rush. A goal is to have good practice built into 'muscle memory' so that even when we're in a rush, we still write something sort of ok rather than an absolute abomination. 
+
 ## Basic good practice (not exhaustive)
 
 * Include comments and docstrings
@@ -16,8 +18,9 @@ A prerequisite to sharing any code is to follow **good practice** when writing i
 * Use functions to isolate repeated elements
 * Use sensible variable and function names
 * Don't reinvent the wheel, use existing modules and packages when possible
+* Use the latest tools (yes I'm looking at those of you who still run MATLAB 2007 or use the old seawater toolbox)
 
-There are a lot of more points that are more relevant to software developers. For scientists the above list is a more reasonable minimum. Could we add any more? Any pet-peeves?
+There are a lot of more points that are more relevant to software developers. For scientists the above list is a good minimum. Could we add any more? Any pet-peeves?
 
 ## Styling python code
 
