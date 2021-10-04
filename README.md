@@ -30,7 +30,7 @@ You need:
 
 Imagine you are trying to understand and replicate someone's analysis of some oceanographic data. Further, assume that you have little to no knowledge if the standard tools and packages that we use in Earth sciences aside from the programming language itself. Each example is self-contained parcel of code and data that someone has sent to you. Follow the instruction to proceed.
 
-1) Clone this repository to a location on your computer e.g. `git clone https://github.com/USERNAME/REPOSITORY`
+1) Clone this repository to a location on your computer e.g. `git clone https://github.com/jessecusack/sharing-code`
 1) Open MATLAB (with your path reverted to default, see above) and/or Jupyter lab from the `sharing-code` conda environment and navigate to the repository.
 1) Attempt Example 1 - The bad example
     1) More instructions are contained in the [README](bad_example/README.md) in the folder.
