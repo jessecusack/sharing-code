@@ -38,7 +38,7 @@ Imagine you are trying to understand and replicate someone's analysis of some oc
     1) More instructions are contained in the [README](better_example/README.md) in the folder.
 1) Attempt Example 3 - The good example
     1) More instructions are contained in the [README](good_example/README.md) in the folder.
-1) Start your own package from a cookiecutter
+1) Start your own package from the [cookiecutter](https://github.com/jessecusack/cookiecutter-bare-bones-python-package)
     1) Sorry MATLAB users, I didn't make a cookiecutter for you. Instead, try using the [example package](https://github.com/jessecusack/example_matlab_toolbox) as a template.
 1) Add a simple matlab function or python module to your package
 1) Create a repository for your package on github
