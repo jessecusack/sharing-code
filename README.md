@@ -10,17 +10,17 @@ You need:
 * Jupyter Lab installed into fresh conda environment
   * Install using `conda create -n sharing-code -c conda-forge jupyterlab jupytext cookiecutter`
   * > If you want to see what this command would do without actually doing anything, add the `-d` option for dry-run.
-  * (I will create an environment yml eventually too)
+  * Alternatively, install using the [environment file I created](tutorial_environment.yml) using `conda env create -f tutorial_environment.yml`
 * MATLAB installed (Preferably a more recent version)
   * _Important_: Revert to the default MATLAB path (make sure you save your current path settings using `savepath folderName/pathdef.m` so that you can recover it later!!!)
-* Git installed on your computer (preferably the command line interface!)
+* Git installed on your computer (preferably the command line interface!). For macOS users, I suggest installing via homebrew, and for windows users via the [website](https://git-scm.com/downloads).
 * A github.com account.
 
 ## Goals
 
 * Download a repository from github
-* List some bad coding practises (in the context of sharing code, as well as more generally)
-* List some good coding practises
+* List some bad coding practices (in the context of sharing code, as well as more generally)
+* List some good coding practices
 * Run (at least partially) the examples.
 * Download a project template using cookiecutter
 * Make your own personal package of functions in MATLAB/python, publish it to github and install it into a new environment
