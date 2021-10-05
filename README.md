@@ -13,7 +13,7 @@ You need:
   * (I will create an environment yml eventually too)
 * MATLAB installed (Preferably a more recent version)
   * _Important_: Revert to the default MATLAB path (make sure you save your current path settings using `savepath folderName/pathdef.m` so that you can recover it later!!!)
-* Git installed on your computer.
+* Git installed on your computer (preferably the command line interface!)
 * A github.com account.
 
 ## Goals
@@ -40,7 +40,8 @@ Imagine you are trying to understand and replicate someone's analysis of some oc
     1) More instructions are contained in the [README](good_example/README.md) in the folder.
 1) Start your own package from the [cookiecutter](https://github.com/jessecusack/cookiecutter-bare-bones-python-package)
     1) Sorry MATLAB users, I didn't make a cookiecutter for you. Instead, try using the [example package](https://github.com/jessecusack/example_matlab_toolbox) as a template.
-1) Add a simple matlab function or python module to your package
+1) Add a simple MATLAB function or python module to your package. Make sure you use a non-base toolbox/package (e.g. numpy in python or gsw in MATLAB). Test that it works.
 1) Create a repository for your package on github
-1) Initialise your package as a git repository, commit your additions, and push them to github
+1) Initialise your package as a git repository, commit your additions, and push them to github. Did you include your dependencies? (optionally, install and run `black` and `isort` to format your code first)
 1) Install your package using pip into the `sharing-code` environment (or, for MATLAB users, via a script that downloads the package from github)
+1) Open up MATLAB or an ipython terminal and test your package.

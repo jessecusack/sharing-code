@@ -6,6 +6,7 @@ List of issues:
 * use of file name for versioning
 * no comments or instructions
 * uninformative variable names
+* highly confusing variable name n for N^2
 * (matlab) we dont know what variables are loaded
 * hard coded path to the wrong place on someone elses computer
 * uses a function that you don't have (which is also not informatively named)
@@ -28,7 +29,7 @@ List of (now more subtle) issues:
 * still assumes you have access to some non-standard packages like m_map and cartopy
 * doesn't specify an environment (or versions) for python
 * data file provided manually
-* name conflicts with two (!) built in matlab functions
+* function name (`smooth`) conflicts with a built in MATLAB function
 * provided functions and modules have no docstrings
 
 ### Good example
@@ -41,6 +42,6 @@ List of improvements:
 * automatic download of data and toolboxes
 * Generate notebooks from python files using jupytext
 
-List of (new very subtle) issues:
+List of (now very subtle) issues:
 
 * Requires MATLAB version > 2013a for savefig function. 

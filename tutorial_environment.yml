@@ -1,0 +1,8 @@
+name: sharing-code
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupytext
+  - jupyterlab
+  - cookiecutter
