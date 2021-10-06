@@ -1,8 +1,10 @@
 % Analysis of an individual VMP profile
 
+% Import toolboxes!
+addpath(genpath('../matlab_toolboxes/'))
 
 % Load data
-vmp_profile = load('vmp_profile_SPAMEX_2014.mat');
+vmp_profile = load('../data/vmp_profile_SPAMEX_2014.mat');
 
 %% Where is this profile located?
 fig1 = figure(101);
@@ -12,7 +14,7 @@ m_grid('linest','-','xticklabels',[],'yticklabels',[]);
 hold on
 m_plot(vmp_profile.lon, vmp_profile.lat, '.r', 'MarkerSize', 30)
 
-saveas(fig1, 'profile_location_matlab.png')
+saveas(fig1, '../figures/profile_location_matlab.png')
 
 %% What does the data look like?
 
@@ -35,7 +37,7 @@ xlabel('N2 [s-2]')
 ylabel('Depth [m]')
 
 %% Buoynacy frequency has some spikes! We need to get rid of those.
-N2_clean = despike(vmp_profile.N_squared);
+N2_clean = jc_despike_threshold(vmp_profile.N_squared);
 
 figure(105);
 plot(N2_clean, vmp_profile.depth)
@@ -46,7 +48,7 @@ ylabel('Depth [m]')
 %% That looked a lot better. 
 % But there are negative values and it seems noisy so we should smooth.
 
-N2_smooth = smooth(N2_clean, 60);
+N2_smooth = jc_convolve_hanning(N2_clean, 60);
 
 figure(105);
 plot(vmp_profile.N_squared, vmp_profile.depth)
@@ -62,7 +64,7 @@ N2_smooth(N2_smooth < 1e-7) = NaN;
 
 %% Calculate the turbulent diffusivity.
 
-Krho = rdiff(vmp_profile.dissipation, N2_smooth, 0.2);
+Krho = jc_calculate_diffusivity(vmp_profile.dissipation, N2_smooth, 0.2);
 
 fig6 = figure(106);
 semilogx(Krho, vmp_profile.depth)
@@ -70,4 +72,4 @@ axis ij
 xlabel('$K_{\rho}$ [m2 s-1]','Interpreter','latex')
 ylabel('Depth [m]')
 
-saveas(fig6, 'diffusivity_matlab.png')
+saveas(fig6, '../figures/diffusivity_matlab.png')
