@@ -1,0 +1,36 @@
+% Sharing Code Tutorial
+% Jesse Cusack
+% 2021
+
+
+# We are software developers as well as scientists
+
+::: columns
+
+:::: column
+![](https://mk0osnewswb2dmu4h0a.kinstacdn.com/images/comics/wtfm.jpg)
+::::
+
+:::: column
+* Testing, where will this appear?
+::::
+
+:::
+
+
+# Why we need to get better at writing software
+
+* We don't write production ready code for millions of users
+* But our time and energy is valuable and the more time spend doing real science the better!
+* Journals have started requiring that code (and data) be open access
+
+# Pandoc notes 1
+
+Some super quickly created demo slides
+
+* Do not need anything else than markdown
+    * Slides title starts with # (also starts a new slide)
+    * Bullet points, newlines, empty lines: all standard markdown
+* However, can also use other stuff, e.g.:
+    * Some HTML (e.g. \<center\>)
+    * When using pandoc beamer, can use latex commands (e.g. \\center, \\large, etc)\dots

@@ -6,6 +6,8 @@
 
 As scientists, we are also software developers. We write code that we use and other people use. However, we have a different set of priorities from professional developers. We don't often need to write 'production ready' code to be used by millions. In fact, what we do is more exploratory and typically shared with only a small group of people (if any). However, while our livelihoods may not depend on the quality of our software, our time and energy is 'expensive' and should not be spent debugging code. Our software should facilitate the process of doing science, not bog it down!
 
+Recently journals have started demanding the code be shared. 
+
 Software development tools are highly under-utilised in the Earth sciences. Although, less so in the numerical modeling community, who have adopted some tools and are spearheading the development of awesome projects (like `xarray`). But definitely in the observational community. I'm not sure why... but it is high time that changed!
 
 Ask yourself:
@@ -31,16 +33,21 @@ There are a lot of more points that are more relevant to software developers. Fo
 
 # Styling code
 
-In python there are community agreed 'de facto official' style guides code.
-
-Use opinionated auto-formatting tools, such as `black` and `isort`. Check your code is mostly consistent with guide e.g. `flake8`. 
+In python there are community agreed 'de facto official' style guides. These can be enforced using opinionated auto-formatting tools, such as `black` and `isort`. Check your code is mostly consistent with guide e.g. `flake8`. However, these are not a replacement for good practice! (They won't write comments for you)
 
 I don't think 'official' style guides exist for MATLAB... so just, try and be consistent! (Look at the source code of built in functions for examples)
+
+# Keeping track of dependencies
+
+* Python: make use of conda environments!
+* MATLAB: (harder) Try to keep your path clean and make use of the `addpath` function. Keep good notes.
+
+* Can specify commit of zip archive: https://github.com/{username}/{projectname}/archive/{sha}.zip
+* Also can do this in the conda environment.
 
 # Using more advanced tools
 
 When code follows basic good practice, it is then a lot easier to make good use of more advanced tools like `git`, github, and `conda` environments. We will get practice using those in this tutorial.
-
 
 # Before start check list!
 
@@ -55,6 +62,7 @@ Explain that we're doing to do everything that we already did, in an automated a
 
 Mention that the scripts pull toolboxes that we already used from the same website. The data is now hosted on dropbox. The extra functions are also git repositories. 
 
+All the previous examples could have been provided as a zip file as an attachment to an email or shared via dropbox. 
 
 # After the tutorial comments
 
@@ -81,7 +89,7 @@ It is possible to create a DOI for code and data.
 * `pypi` - uploading your package for everyone (also conda-forge)
 
 
-Notes:
+# Improvement notes
 
 Rearrange the instructions on the example research project.
 
