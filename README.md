@@ -17,9 +17,10 @@ The examples in this repository constitute an (opinionated) tutorial on the 'dos
 * Jupyter Lab installed into fresh conda environment. First open a terminal and then install by:
   * Entering the command `conda create -n sharing-code -c conda-forge jupyterlab jupytext cookiecutter`
   * _If you want to see what this command would do without actually doing anything, add the `-d` option for dry-run._
-  * Alternatively, copy paste the [environment that I created](https://raw.githubusercontent.com/jessecusack/sharing-code/main/tutorial_environment.yml) and save into a file called `tutorial_environment.yml` on your computer. Then install from the terminal using `conda env create -f tutorial_environment.yml`, or, from within the Anaconda GUI using the '[import environment](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/#importing-an-environment)' feature.
+  * Alternatively, copy paste the [environment specs](https://raw.githubusercontent.com/jessecusack/sharing-code/main/tutorial_environment.yml) and save into a file called `tutorial_environment.yml` on your computer. Then, using the terminal, run `conda env create -f tutorial_environment.yml`, or, from within the Anaconda GUI using the '[import environment](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/#importing-an-environment)' feature.
   
 ### For MATLAB users
+
 * MATLAB installed (Preferably a more recent version)
   * _Important_: Revert to the default MATLAB path (make sure you save your current path settings using `savepath folderName/pathdef.m` so that you can recover it later!!!)
   

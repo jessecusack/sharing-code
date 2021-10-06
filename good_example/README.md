@@ -7,8 +7,7 @@ The sender also tells you that "the MATLAB code requires the m_map toolbox (http
 ## Instructions
 
 * Look at the folder structure, how is it organised?
-* Visually inspect the code, can you spot any issues?
-* Try and run the code, what works, what doesn't work, is anything missing?
-* Finangle with it as much as possible, how much of it can you get to work independent of the rest?
-* Seek out and add the missing components
-* Having run the code to the extent possible, is there anything else you'd add to your list of issues?
+* Visually inspect the code, can you spot any issues? What changed about the MATLAB toolbox? Did anything change with the python utils?
+* Try and run the code is anything missing?
+* Seek out and add the missing components, if any.
+* Having run the code to the extent possible, are there any potential problems you can think of?

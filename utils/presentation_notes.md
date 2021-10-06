@@ -6,7 +6,10 @@
 
 As scientists, we are also software developers. We write code that we use and other people use. However, we have a different set of priorities from professional developers. We don't often need to write 'production ready' code to be used by millions. In fact, what we do is more exploratory and typically shared with only a small group of people (if any). However, while our livelihoods may not depend on the quality of our software, our time and energy is 'expensive' and should not be spent debugging code. Our software should facilitate the process of doing science, not bog it down!
 
-Recently journals have started demanding the code be shared. 
+Recently journals have started demanding the code be shared. It is possible to create a DOI for code and data.
+
+* [Zenodo](https://zenodo.org/) - archiving data and code
+* `pypi` - uploading your package for everyone (also conda-forge)
 
 Software development tools are highly under-utilised in the Earth sciences. Although, less so in the numerical modeling community, who have adopted some tools and are spearheading the development of awesome projects (like `xarray`). But definitely in the observational community. I'm not sure why... but it is high time that changed!
 
@@ -64,6 +67,12 @@ Mention that the scripts pull toolboxes that we already used from the same websi
 
 All the previous examples could have been provided as a zip file as an attachment to an email or shared via dropbox. 
 
+# Before the git example
+
+Git doesn't play well with a lot of things, like data. We're going to explore ways to handle those things using scripts.
+
+For python users we're going to introduce a way of converting notebooks using jupytext. 
+
 # After the tutorial comments
 
 There are always trade-offs in time vs. usability. Creating a github repository and download scripts does take additional time. However, we can't quantify all the time that might be wasted in the future trying to debug problems. Given how many weeks (months?) I have spent debugging the code of other people, I work under the assumption that putting time in at the start is always worth it, unless in exceptional circumstances (like at sea or in the field under a time crunch - then there are other priorities like data collection). I can think of scenarios when sharing the 'better example' is perfectly acceptable, however, I cannot think of any time when sharing the 'bad example' is acceptable.
@@ -81,17 +90,5 @@ There are always trade-offs in time vs. usability. Creating a github repository 
 
 The further down this list we go, the more we get into the realms of professional software development. Most scientists don't have the time or motivation to learn all these tools, but I think they *should* be aware they exist and what they aim to achieve. 
 
-# Open Access
-
-It is possible to create a DOI for code and data.
-
-* [Zenodo](https://zenodo.org/) - archiving data and code
-* `pypi` - uploading your package for everyone (also conda-forge)
-
-
-# Improvement notes
-
-Rearrange the instructions on the example research project.
-
-Make matlab scripts that download the data.
+It would be nice to have a simple sketch of this.
 

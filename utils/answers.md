@@ -7,13 +7,14 @@ List of issues:
 * no comments or instructions
 * uninformative variable names
 * highly confusing variable name n for N^2
-* (matlab) we dont know what variables are loaded
+* in the MATLAB code we dont know what variables are loaded
 * hard coded path to the wrong place on someone elses computer
-* uses a function that you don't have (which is also not informatively named)
+* function name (`smooth`) conflicts with a built in MATLAB function
 * needs the m_map toolbox which we might not have
 * needs cartopy/scipy etc. packages which we might not have installed
+* provided functions and modules have no docstrings
 
-### Better example
+### Good example
 
 List of improvements:
 
@@ -26,23 +27,22 @@ List of improvements:
 
 List of (now more subtle) issues:
 
-* still assumes you have access to some non-standard packages like m_map and cartopy (the code only worked because we already installed them for the previous example)
+* still makes you go and fetch the dependencies yourself
 * doesn't specify an environment (or versions) for python
 * data file provided manually
-* function name (`smooth`) conflicts with a built in MATLAB function
 * why build your own smoothing function when it already exists! (there might be a good reason for this)
-* provided functions and modules have no docstrings
 
-### Good example
+### Git example
 
 List of improvements:
 
-* specifies a conda environment
+* specifies a conda environment with version numbers
 * contains instructions and requirements
 * version control with git, accessible via github
 * automatic download of data and toolboxes
-* Generate notebooks from python files using jupytext
+* generate notebooks from python files using jupytext
 
 List of (now very subtle) issues:
 
-* Requires MATLAB version > 2013a for savefig function. 
+* Requires MATLAB version > 2013a for savefig function.
+* We should have specified the specific version/commit of the toolboxes. 
