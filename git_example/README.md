@@ -1,4 +1,4 @@
-# Good examples
+# The git example
 
 Imagine you are attempting to replicate someone's analysis. They have shared their work which is contained in a git repository hosted on github.
 
