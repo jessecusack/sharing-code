@@ -53,7 +53,13 @@ Do a quick check of your function by opening up a python console (from the Jupyt
 
 Now, going back to the main directory, notice that there is a file called `setup.cfg`. Close to the bottom of this file is a line that starts with `install_requires =`. After the `=`, add your dependencies (in my case, just `numpy`). 
 
-Now you've done everything you need to do to qualify this as a python package! You can now proceed to the git section. 
+Now you've done everything you need to do to qualify this as a python package! Lets check it installs, in the terminal from the main package directory try: 
+
+```bash
+conda activate sharing-code
+pip install . -e
+```
+Did it install? If yes, you can now proceed to the git section. 
 
 # 2. Git and github
 
@@ -96,7 +102,7 @@ Create another script that uses `addpath` to load your package and then makes us
 
 ## Python
 
-Create an environment file `environment.yml` which installs your package via `pip`. Look at the `git_example` for an example. Make sure it also installs `ipython`. 
+Create an environment file (e.g. `environment.yml`) which installs your package via `pip`. Look at the `git_example` for an example. Make sure it also installs `ipython`. 
 
 Try running `conda env create -f environment.yml`. Did it install your package? To check if it worked, do something like:
 
