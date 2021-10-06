@@ -3,7 +3,7 @@ import requests
 import os
 from helpers import strip_comments, add_new_line_sep, remove_function_docstrings
 
-save_dir = os.path.join("..", "better_example")
+save_dir = os.path.join("..", "bad_example")
 
 # +
 url = "https://raw.githubusercontent.com/jessecusack/example_matlab_toolbox/main/jc_calculate_diffusivity.m"
@@ -72,9 +72,9 @@ save_to = os.path.join(save_dir, "analyse_vmp_profile.ipynb")
 os.system(f"source $CONDA_PREFIX/etc/profile.d/conda.sh && conda activate base && jupytext --set-formats .ipynb --from py:percent --to ipynb -k python3 -o {save_to} {tmp_file}")
 
 os.remove(tmp_file)
+# -
 
-# +
-# The error above is not a problem I think
+print("I don't think the above error was a problem...")
 
 # +
 url = "https://raw.githubusercontent.com/jessecusack/example_python_package/main/example_python_package/utils.py"
@@ -88,3 +88,48 @@ new_text = text.splitlines()[1:]
 
 with open(os.path.join(save_dir, "utils.py"), "w") as f:
     f.writelines(add_new_line_sep(new_text))
+# -
+
+load_dir = os.path.join("..", "bad_example")
+
+# +
+with open(os.path.join(load_dir, "analyse_vmp_profile.m"), "r") as f:
+    text = f.read()
+      
+text = text.replace("vmp_profile = load('vmp_profile_SPAMEX_2014.mat');", "load('/Users/johnsmith/mydata/dat.mat');")
+text = text.replace("vmp_profile.depth", "d")
+text = text.replace("vmp_profile.temperature", "tmp")
+text = text.replace("vmp_profile.salinity", "sal")
+text = text.replace("vmp_profile.dissipation", "e")
+text = text.replace("vmp_profile.N_squared", "n")
+text = text.replace("vmp_profile.lat", "lat")
+text = text.replace("vmp_profile.lon", "lon")
+text = text.replace("N2_clean", "nc")
+text = text.replace("N2_smooth", "ns")
+    
+new_text = strip_comments(text.splitlines())
+
+with open(os.path.join(save_dir, "analyse_data_v2.m"), "w") as f:
+    f.writelines(add_new_line_sep(new_text))
+
+# +
+with open(os.path.join(load_dir, "analyse_vmp_profile.ipynb"), "r") as f:
+    text = f.read()
+    
+text = text.replace("vmp_profile_SPAMEX_2014", "dat")
+text = text.replace("vmp_profile", "dat")
+text = text.replace(""""depth""", """"d""")
+text = text.replace(""""temperature""", """"tmp""")
+text = text.replace(""""salinity""", """"sal""")
+text = text.replace(""""dissipation""", """"e""")
+text = text.replace(""""N_squared""", """"n""")
+text = text.replace("N2_clean", "nc")
+text = text.replace("N2_smooth", "ns")
+
+with open(os.path.join(save_dir, "analyse_data_v2.ipynb"), "w") as f:
+    f.write(text)
+    
+import nbformat as nbf
+ntbk = nbf.read(os.path.join(save_dir, "analyse_data_v2.ipynb"), nbf.NO_CONVERT)
+ntbk.cells = [cell for cell in ntbk.cells if cell.cell_type != "markdown"]
+nbf.write(ntbk, os.path.join(save_dir, "analyse_data_v2.ipynb"), version=nbf.NO_CONVERT)

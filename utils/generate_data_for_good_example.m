@@ -11,6 +11,6 @@ N_squared = vmp.n2;
 lat = vmp.lat;
 lon = vmp.lon;
 
-save('../better_example/vmp_profile_SPAMEX_2014.mat', 'N_squared', 'temperature', 'salinity', 'dissipation', 'depth', 'lat', 'lon', '-v7')
+% save('../better_example/vmp_profile_SPAMEX_2014.mat', 'N_squared', 'temperature', 'salinity', 'dissipation', 'depth', 'lat', 'lon', '-v7')
 % also save to Dropbox
 save('~/Dropbox/Data/example_data_for_resuable_code/vmp_profile_SPAMEX_2014.mat', 'N_squared', 'temperature', 'salinity', 'dissipation', 'depth', 'lat', 'lon', '-v7')
