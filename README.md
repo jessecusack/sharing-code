@@ -1,6 +1,6 @@
 # Sharing Code Tutorial
 
-The examples in this repository constitute an (opinionated) tutorial on the 'dos and donts' of sharing scientific code. It is written in python and MALTAB because both are extremely prevalent in the Earth science community. The idea is to work through the examples (following the instructions below and the README in each folder) in either (or both) programming languages. Each example progressively exposes practices and tools for sharing code and data in a way that is more reproducible. The final task involves making a personal python/matlab package and hosting it on github.
+The examples in this repository constitute an (opinionated) tutorial on the 'dos and donts' of sharing scientific code. It is written in python and MATLAB because both are extremely prevalent in the Earth science community. The idea is to work through the examples (following the instructions below and the README in each folder) in either (or both) programming languages. Each example progressively exposes practices and tools for sharing code and data in a way that is more reproducible. The final task involves making a personal python/matlab package and hosting it on github.
 
 ## Requirements
 
