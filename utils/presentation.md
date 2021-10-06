@@ -29,15 +29,38 @@ We _all_ write bad code form time to time! Usually because we're under pressure 
 
 There are a lot of more points that are more relevant to software developers. For scientists the above list is a good minimum. Could we add any more? Any pet-peeves?
 
-# Styling python code
+# Styling code
 
-Use opinionated auto-formatting tools, such as `black` and `isort`. Check your code is mostly consistent with standards e.g. `flake8`. 
+In python there are community agreed 'de facto official' style guides code.
 
-I don't think standards even exist for MATLAB... so just, try and be consistent! (Look at the source code of built in functions for examples)
+Use opinionated auto-formatting tools, such as `black` and `isort`. Check your code is mostly consistent with guide e.g. `flake8`. 
+
+I don't think 'official' style guides exist for MATLAB... so just, try and be consistent! (Look at the source code of built in functions for examples)
 
 # Using more advanced tools
 
 When code follows basic good practice, it is then a lot easier to make good use of more advanced tools like `git`, github, and `conda` environments. We will get practice using those in this tutorial.
+
+
+# Before start check list!
+
+Revert MATLAB path
+Start up Jupyter Lab from the sharing-code environment
+
+Lets try and analyse some VMP data.
+
+# Before the good example
+
+Explain that we're doing to do everything that we already did, in an automated and reproducible way using git, conda environments and scripts that download things.
+
+Mention that the scripts pull toolboxes that we already used from the same website. The data is now hosted on dropbox. The extra functions are also git repositories. 
+
+
+# After the tutorial comments
+
+There are always trade-offs in time vs. usability. Creating a github repository and download scripts does take additional time. However, we can't quantify all the time that might be wasted in the future trying to debug problems. Given how many weeks (months?) I have spent debugging the code of other people, I work under the assumption that putting time in at the start is always worth it, unless in exceptional circumstances (like at sea or in the field under a time crunch - then there are other priorities like data collection). I can think of scenarios when sharing the 'better example' is perfectly acceptable, however, I cannot think of any time when sharing the 'bad example' is acceptable.
+
+* Fluency with `git` and github takes time and practice. I only use a small fraction of their capabilities. 
 
 # Even more advanced tools (for reference)
 
@@ -50,15 +73,17 @@ When code follows basic good practice, it is then a lot easier to make good use 
 
 The further down this list we go, the more we get into the realms of professional software development. Most scientists don't have the time or motivation to learn all these tools, but I think they *should* be aware they exist and what they aim to achieve. 
 
-# After the tutorial comments
-
-There are always trade-offs in time vs. usability. Creating a github repository and download scripts does take additional time. However, we can't quantify all the time that might be wasted in the future trying to debug problems. Given how many weeks (months?) I have spent debugging the code of other people, I work under the assumption that putting time in at the start is always worth it, unless in exceptional circumstances (like at sea or in the field under a time crunch - then there are other priorities like data collection). I can think of scenarios when sharing the 'better example' is perfectly acceptable, however, I cannot think of any time when sharing the 'bad example' is acceptable.
-
-* Fluency with `git` and github takes time and practice. I only use a small fraction of their capabilities. 
-
 # Open Access
 
 It is possible to create a DOI for code and data.
 
 * [Zenodo](https://zenodo.org/) - archiving data and code
 * `pypi` - uploading your package for everyone (also conda-forge)
+
+
+Notes:
+
+Rearrange the instructions on the example research project.
+
+Make matlab scripts that download the data.
+

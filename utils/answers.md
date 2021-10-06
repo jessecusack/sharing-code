@@ -26,10 +26,11 @@ List of improvements:
 
 List of (now more subtle) issues:
 
-* still assumes you have access to some non-standard packages like m_map and cartopy
+* still assumes you have access to some non-standard packages like m_map and cartopy (the code only worked because we already installed them for the previous example)
 * doesn't specify an environment (or versions) for python
 * data file provided manually
 * function name (`smooth`) conflicts with a built in MATLAB function
+* why build your own smoothing function when it already exists! (there might be a good reason for this)
 * provided functions and modules have no docstrings
 
 ### Good example

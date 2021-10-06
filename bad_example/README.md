@@ -1,6 +1,6 @@
 # Bad example
 
-Imagine you have received this code and data from someone and are hoping to replicate their analysis.
+Imagine you have received this code and data via email from someone and are hoping to replicate their analysis.
 
 ## Instructions
 

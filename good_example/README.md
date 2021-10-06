@@ -1,11 +1,12 @@
 # Good examples
 
-Imagine you are attempting to replicate someones analysis. They have shared their work which is contained in a git repository hosted on github.
+Imagine you are attempting to replicate someone's analysis. They have shared their work which is contained in a git repository hosted on github.
 
 https://github.com/jessecusack/example_research_project
 
 ## Instructions
 
+* Clone the repository using the terminal `git clone https://github.com/jessecusack/example_research_project`
 * Follow the **manual instructions** (don't use `setup.sh`) in the README to install the environment.
 * Follow the instructions to run the analysis and look at the resulting figures.
 * Did you convert the python code to a notebook and open it with Jupyter Lab? If not, try.

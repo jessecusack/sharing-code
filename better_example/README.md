@@ -1,6 +1,6 @@
 # Better example
 
-Imagine you have received this code and data from someone and are hoping to replicate their analysis.
+Imagine you have received this code and data via email from someone and are hoping to replicate their analysis.
 
 ## Instructions
 
@@ -8,4 +8,4 @@ Imagine you have received this code and data from someone and are hoping to repl
 * Try and run the code, what works, what doesn't work?
 * Finangle with it as much as possible, how much of it can you get to work?
 * Seek out and add the missing components, if there are any.
-* After having running through the code, are there any final concerns?
+* After having running through the code, are there any final concerns? (Take a peek inside the provided functions!)
