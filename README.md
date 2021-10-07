@@ -36,12 +36,16 @@ The examples in this repository constitute an (opinionated) tutorial on the 'dos
 
 ## Instructions
 
-Imagine you are trying to understand and replicate someone's analysis of some oceanographic data. Further, assume that you have little to no knowledge if the standard tools and packages that we use in Earth sciences aside from the programming language itself. Each example is self-contained parcel of code and data that someone has sent to you. Follow the instruction to proceed.
+Imagine you are trying to understand and replicate someone's analysis of an oceanographic dataset (in this case, a single VMP profile). Further, assume that you have little to no knowledge of the standard tools and packages that we use in Earth sciences aside from a programming language. Each example is self-contained parcel of code which includes a `README` with further instructions.
 
-* Clone this repository to a location on your computer e.g. `git clone https://github.com/jessecusack/sharing-code`
+Start by:
+
+* Cloning this repository to a location on your computer e.g. `git clone https://github.com/jessecusack/sharing-code` _or_ `git clone git@github.com/jessecusack/sharing-code` if you have set up ssh key access to github.
 * Open MATLAB (with your path reverted to default, see above) and/or Jupyter lab from the `sharing-code` conda environment and navigate to the repository.
 
-1) [Attempt Example 1 - The bad example](bad_example/README.md)
-1) [Attempt Example 2 - The good example](good_example/README.md)
-1) [Attempt Example 3 - The git example](git_example/README.md)
-1) [Build your own package](build_your_own_package/README.md)
+Then go through:
+
+1) [Attempt Example 1 - The bad example](bad_example)
+2) [Attempt Example 2 - The good example](good_example)
+3) [Attempt Example 3 - The git example](git_example)
+4) [Build your own package](build_your_own_package)
