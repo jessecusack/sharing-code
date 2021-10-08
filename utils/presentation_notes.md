@@ -4,12 +4,13 @@
 
 # Introduction
 
-As scientists, we are also software developers. We write code that we use and other people use. However, we have a different set of priorities from professional developers. We don't often need to write 'production ready' code to be used by millions. In fact, what we do is more exploratory and typically shared with only a small group of people (if any). However, while our livelihoods may not depend on the quality of our software, our time and energy is 'expensive' and should not be spent debugging code. Our software should facilitate the process of doing science, not bog it down!
+As scientists, we are also software developers. We write code that we use and other people use. However, we have a different set of priorities from professional developers. We don't often need to write 'production ready' code to be used by millions. In fact, what we do is more exploratory and typically shared with only a small group of people (if any). However, while our livelihoods may not depend on the quality of our software, our time and energy is valuable and should not be spent debugging code. Our software should facilitate the process of doing science, not bog it down!
 
 Recently journals have started demanding the code be shared. It is possible to create a DOI for code and data.
 
 * [Zenodo](https://zenodo.org/) - archiving data and code
 * `pypi` - uploading your package for everyone (also conda-forge)
+* Data - NODC (NOAA), NCEI
 
 Software development tools are highly under-utilised in the Earth sciences. Although, less so in the numerical modeling community, who have adopted some tools and are spearheading the development of awesome projects (like `xarray`). But definitely in the observational community. I'm not sure why... but it is high time that changed!
 
@@ -52,32 +53,31 @@ I don't think 'official' style guides exist for MATLAB... so just, try and be co
 
 When code follows basic good practice, it is then a lot easier to make good use of more advanced tools like `git`, github, and `conda` environments. We will get practice using those in this tutorial.
 
-# Before start check list!
+# Before starting!
 
-Revert MATLAB path
-Start up Jupyter Lab from the sharing-code environment
+* Revert MATLAB path
+* Start up Jupyter Lab from the sharing-code environment
 
 Lets try and analyse some VMP data.
 
-# Before the good example
-
-Explain that we're doing to do everything that we already did, in an automated and reproducible way using git, conda environments and scripts that download things.
-
-Mention that the scripts pull toolboxes that we already used from the same website. The data is now hosted on dropbox. The extra functions are also git repositories. 
-
-All the previous examples could have been provided as a zip file as an attachment to an email or shared via dropbox. 
-
 # Before the git example
 
-Git doesn't play well with a lot of things, like data. We're going to explore ways to handle those things using scripts.
+* Very brief explanation of git as version control/backup system.
+* Explain that we're doing to do everything that we already did, in an automated and reproducible way using git, conda environments and scripts that download things.
+* Git doesn't play well with a lot of things, like data. We're going to explore ways to handle those things using scripts.
+* The scripts pull toolboxes that we already used from the same website. The data is now hosted on dropbox. The extra functions are also git repositories. 
+* For python users we're going to introduce a way of converting notebooks using jupytext. 
 
-For python users we're going to introduce a way of converting notebooks using jupytext. 
+# Before building a package
+
+* Explain the git example shared personal packages in a different way than we've seen before. For python, it was installed via a conda environment. For MATLAB it was downloaded by a script.
+* We're going to try out those ideas. 
 
 # After the tutorial comments
 
-There are always trade-offs in time vs. usability. Creating a github repository and download scripts does take additional time. However, we can't quantify all the time that might be wasted in the future trying to debug problems. Given how many weeks (months?) I have spent debugging the code of other people, I work under the assumption that putting time in at the start is always worth it, unless in exceptional circumstances (like at sea or in the field under a time crunch - then there are other priorities like data collection). I can think of scenarios when sharing the 'better example' is perfectly acceptable, however, I cannot think of any time when sharing the 'bad example' is acceptable.
+There are always trade-offs in time vs. usability. Creating a github repository and download scripts does take additional time. However, we can't quantify all the time that might be wasted in the future trying to debug problems. Given how many weeks (months?) I have spent debugging the code of other people, I work under the assumption that putting time in at the start is always worth it, unless in exceptional circumstances (like at sea or in the field under a time crunch - then there are other priorities like data collection). I can think of scenarios when sharing the 'good example' is perfectly acceptable, however, I cannot think of any time when sharing code lacking comments or instructions is acceptable.
 
-* Fluency with `git` and github takes time and practice. I only use a small fraction of their capabilities. 
+* Fluency with `git` and github takes time and practice. It is an extremely comprehensive tool and I only use a small fraction of its capabilities. We didn't really dive into it all, just learned some basic commands. I would recommend doing the software carpentry tutorial on git.
 
 # Even more advanced tools (for reference)
 

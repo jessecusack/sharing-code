@@ -1,6 +1,6 @@
 % Sharing Code Tutorial
 % Jesse Cusack
-% 2021
+% \today
 
 
 # We are software developers as well as scientists
@@ -12,25 +12,136 @@
 ::::
 
 :::: column
-* Testing, where will this appear?
+* Most of use spend a large chunk of our time writing code.
+* When someone gives you code, how often does it 'just work'?
 ::::
 
 :::
 
-
 # Why we need to get better at writing software
 
-* We don't write production ready code for millions of users
-* But our time and energy is valuable and the more time spend doing real science the better!
-* Journals have started requiring that code (and data) be open access
+## We might not write production ready code for millions of users, _however_
 
-# Pandoc notes 1
+* our time and energy is valuable and the more time spent doing science the better!
+* journals have started requiring that data and code be open access
 
-Some super quickly created demo slides
+And what good is open access code that no one can understand, use or build upon?
 
-* Do not need anything else than markdown
-    * Slides title starts with # (also starts a new slide)
-    * Bullet points, newlines, empty lines: all standard markdown
-* However, can also use other stuff, e.g.:
-    * Some HTML (e.g. \<center\>)
-    * When using pandoc beamer, can use latex commands (e.g. \\center, \\large, etc)\dots
+# Citing your code
+
+Organisations exist that will archive your code and create a DOI that you can cite. For example:
+
+* [Zenodo (zenodo.org)](https://zenodo.org/)
+* This is _really easy to do_, your github repositories can be linked directly to Zenodo
+
+Data can also be archived with Zenodo, or using a national database like NODC or NCEI (NOAA).
+
+# Software development tools need greater use in science!
+
+::: columns
+
+:::: column
+![](https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png)
+::::
+
+:::: column
+A vast array of tools exist for making great, reusable code. These are just the tip of the iceberg. But most scientists don't make good use of them. 
+
+> There are many honourable exceptions to this statement, especially in the numerical modelling community.
+::::
+
+:::
+
+# This is not going to be a git tutorial - more like an 'exposure'
+
+* To learn git I recommend software carpentry: https://swcarpentry.github.io/git-novice/
+
+# First - basic good practice
+
+Before getting into tools like github I want to revist the basics of code style
+
+* Use comments extensively
+* Adopt a consistent style
+* Use sensible variable and function names
+* Make functions for repeated code elements! (With documentation)
+* But don't reinvent the wheel, use existing packages and modules when available.
+* Keep track of the packages and modules that you use
+* Use the latest tools (no more MATLAB 2007, or the old seawater package)
+
+# We _all_ write bad code sometimes
+
+Goal: **Make good style 'muscle memory'**
+
+# Code styling tools
+
+Python has an official style guide that can be enforced with tools:
+
+* `black` - code styler
+* `isort` - import styler
+* `flake8` - code style checker
+
+However, these only get you so far. They won't write your comments or documentation.
+
+In MATLAB:
+
+* There is no official style guide, so just try to be consistent!
+
+# Dependency tracking tools
+
+In python:
+
+* `conda environments` - good for science packages
+* `venv` - another one
+
+A MATLAB equivalent to the above doesn't exist, so try to make copious use of `addpath` (kind of like python's import), rather than putting everything on the main path.
+
+# The bad and the good example
+
+Lets start!
+
+* MATLAB: did you revert your path?
+* Python: did you start jupyter lab from the `sharing-code` environment?
+
+**Prompt**: Imagine I have given you some code for analysing VMP data. You want to reproduce what I've done. Start by looking in the `bad_example/` then go to the `good_example/`. Follow the instructions in the README file - I'll work along with you.
+
+# The bad and the good - debrief
+
+* Lets go over the issues.
+
+# The git example
+
+Very similar to the good example, with some new bits:
+
+* Tracking data dependencies with scripts
+* Tracking package dependencies with environments (or MATLAB scripts)
+
+Now, go to the README in `git_example/`
+
+# The git example - debrief
+
+# Building your own package
+
+The code we just looked at is what I would call a 'research project'. It contained analysis, imported packages and downloaded data, i.e., a lot of different things. 
+
+A package/library/toolbox/module is different. It contains functions and classes that perform clear tasks (e.g. `numpy` or `m_map`)
+
+We're going to try building our own package and host it on github.
+
+# `Cookiecutter` (python)
+
+* Python packages are more versatile than MATLAB, but also more tedious to create because of the extra configuration files, so we'll automate the process using `cookiecutter`. I suggest looking over the additional files in your own time to try and figure out what they do. 
+* MATLAB users can build your package by hand since it is just a folder. 
+
+Now, go to the README in `build_your_own_package/`
+
+# Package building - debrief
+
+* Any thoughts or comments?
+* Practice adding more functions in your own time.
+* Way more (better) cookiecutters exist (including for a 'research project' style structure)
+
+# Final summary
+
+* Getting familiar with version control and scripting takes practice
+* There are always a trade-off between time spent and benefits gained. When would sharing the good example be acceptable? Is the bad example ever acceptable?

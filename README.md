@@ -49,3 +49,11 @@ Then go through:
 2) [Attempt Example 2 - The good example](good_example)
 3) [Attempt Example 3 - The git example](git_example)
 4) [Build your own package](build_your_own_package)
+
+# Additional Notes
+
+Convert `presentation.txt` to a beamer pdf using pandoc:
+
+```bash
+pandoc -t beamer -s presentation.txt -o presentation.pdf
+```
